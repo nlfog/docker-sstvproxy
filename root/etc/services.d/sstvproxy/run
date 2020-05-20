@@ -2,5 +2,6 @@
 
 umask 022
 
+cd /app/sstvproxy
 exec \
-	s6-setuidgid abc /usr/bin/python3 /app/sstvproxy/sstvProxy.py
+	s6-setuidgid abc /usr/bin/python3 /app/sstvproxy/sstvProxy.py $YAP_ARGS
